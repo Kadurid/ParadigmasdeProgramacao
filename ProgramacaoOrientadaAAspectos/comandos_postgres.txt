@@ -1,0 +1,17 @@
+/--Tabela aluno--/
+CREATE TABLE IF NOT EXISTS aluno (
+  codigo SERIAL PRIMARY KEY NOT NULL,
+  nome varchar(50) NOT NULL,
+  matricula varchar(10) NOT NULL,
+  codfone integer default NULL
+);
+
+/--Inserir valores--/
+INSERT INTO aluno (codigo, nome, matricula, codfone) VALUES 
+(1, 'Jose', 'AB', 1),
+(2, 'Joao', 'AC', 1),
+(3, 'Maria', 'AD', 2),
+(4, 'Pedro', 'AJ', 2),
+(5, 'Rosa', 'AL', 1),
+(6, 'Jose Silva', 'AB', 1),
+(7, 'Monica', 'AB', 1);
